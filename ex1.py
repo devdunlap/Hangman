@@ -35,7 +35,7 @@ while "_" in placeholder and lives > 0:
             correct_guess = True
     print("".join(placeholder))
     print(f"****************************{lives}/6 LIVES LEFT****************************")
-    print(stages[lives])  # TODO-3: Print the ASCII art for current lives
+    print(stages[lives])  # Shows the ASCII art for current lives
     if "_" not in placeholder:
         print("You guessed the word!")
         break
@@ -44,7 +44,7 @@ while "_" in placeholder and lives > 0:
         print(f"You guessed '{guess}', that's not in the word. You lose a life.")
         print(f"You have {lives} lives left.")
         if lives == 0:
-            print("You've run out of lives. Game over!")
+            print("***********************YOU LOSE**********************")
+            print(f"The correct word was: {chosen_word}")
             print(stages[lives])
-            print(chosen_word)
 
