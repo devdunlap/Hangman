@@ -41,6 +41,7 @@ while "_" in placeholder and lives > 0:
         break
     if not correct_guess:
         lives -= 1
+        print(f"You guessed '{guess}', that's not in the word. You lose a life.")
         print(f"You have {lives} lives left.")
         if lives == 0:
             print("You've run out of lives. Game over!")
